@@ -1,0 +1,23 @@
+{
+  "name": "recruitment_task_frontend_header_menu",
+  "version": "1.0.0",
+  "description": "recruitment task frontend header menu by Piotr Fijałkowski",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PiotrFijalkowski/recruitment_task_frontend_header_menu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PiotrFijalkowski/recruitment_task_frontend_header_menu/issues"
+  },
+  "homepage": "https://github.com/PiotrFijalkowski/recruitment_task_frontend_header_menu#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
