@@ -1,0 +1,39 @@
+.nav {
+
+  &--toggle {
+    display: none;
+  }
+  &--toggle:checked ~ ul {
+      transform: scale(1,1);
+
+  }
+  &--hamburger {
+    position: absolute;
+    top: 15px;
+    height: 20px;
+    span,
+    span:before,
+    span:after {
+      display: block;
+      background:$black;
+      height: 2px;
+      width: 2em;
+      border-radius: 2px;
+      position: relative;
+    }
+    span:before,
+    span:after {
+      content: '';
+      position: absolute;
+    }
+    span:before {
+      top: 7px;
+    }
+    span:after {
+      top: 14px;
+    }
+    @include breakpoint-md {
+      display: none;
+    }
+  }
+}
