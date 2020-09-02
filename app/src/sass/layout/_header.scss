@@ -119,14 +119,13 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      opacity: 0;
       transform: scale(1, 0);
       transform-origin: top;
       transition: 0.5s;
 
       @include breakpoint-md {
         transform: initial;
-        opacity: initial;
+        transition: initial;
       }
 
       &--link {

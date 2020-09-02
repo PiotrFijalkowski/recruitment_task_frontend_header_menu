@@ -3,7 +3,12 @@
   &--toggle {
     display: none;
   }
-
+  &--toggle:not(:checked)~ul {
+    opacity: 0;
+    @include breakpoint-md {
+      opacity: 1;
+    }
+  }
   &--toggle:checked~ul {
     transform: scale(1, 1);
     opacity: 1;
