@@ -19,3 +19,23 @@ a {
     color: $pink;
   }
 }
+
+.nav__items--link {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  a{
+    color: $black;
+    @include breakpoint-lg {
+      font-size: 14px;
+    }
+  }
+
+  &:hover, 
+  &.active {
+    a{
+
+      color: $pink;
+    }
+  }
+}
