@@ -3,12 +3,15 @@
   &--toggle {
     display: none;
   }
+
   &--toggle:not(:checked)~ul {
     opacity: 0;
+
     @include breakpoint-md {
       opacity: 1;
     }
   }
+
   &--toggle:checked~ul {
     transform: scale(1, 1);
     opacity: 1;
@@ -16,9 +19,11 @@
 
   }
 
+
+
   &--hamburger {
     position: absolute;
-    top: 15px;
+    top: 25px;
     height: 20px;
 
     span,
@@ -27,27 +32,51 @@
       display: block;
       background: $black;
       height: 2px;
-      width: 2em;
+      width: 24px;
       border-radius: 2px;
       position: relative;
+      transform: rotateZ(0deg);
     }
 
     span:before,
     span:after {
       content: '';
       position: absolute;
+      transition: all 0.6s var(--animaton-curve);
     }
 
     span:before {
       top: 7px;
+      transform-origin: left bottom;
     }
 
     span:after {
-      top: 14px;
+      bottom: 7px;
+      transform-origin: left top;
     }
 
     @include breakpoint-md {
       display: none;
     }
   }
+}
+
+//close hamburger animation
+
+#nav--toggle:checked~label>span {
+  background: white;
+}
+
+#nav--toggle:checked~label>span::before {
+  background: black;
+  transform: rotatez(-38deg);
+}
+
+#nav--toggle:checked~label>span::after {
+  background: black;
+  transform: rotatez(38deg);
+}
+
+#nav--toggle~label>span {
+  transition: all 0.5s var(--animaton-curve);
 }
