@@ -6,6 +6,8 @@
 
   &--toggle:checked~ul {
     transform: scale(1, 1);
+    opacity: 1;
+    transition: transform 600ms ease-in-out;
 
   }
 
