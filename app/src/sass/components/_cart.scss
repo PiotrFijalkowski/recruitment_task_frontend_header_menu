@@ -1,5 +1,4 @@
-
- .header-tools__cart {
+.header-tools__cart {
   position: absolute;
   top: 10px;
   right: 20px;
@@ -9,31 +8,33 @@
     top: initial;
     right: initial;
   }
-@include breakpoint-lg {
-  padding-right: 30px;
-}
+
+  @include breakpoint-lg {
+    padding-right: 30px;
+  }
 
   .basket {
     position: relative;
     display: flex;
-  
+
     &--text {
       display: none;
+
       @include breakpoint-md {
         display: block;
         margin: 0 0 0 15px;
       }
     }
-  
+
     &__tooltip {
       position: absolute;
       bottom: -10px;
       left: 15px;
-  
+
       &--bg {
         position: relative;
       }
-  
+
       &--text {
         position: absolute;
         width: 20px;

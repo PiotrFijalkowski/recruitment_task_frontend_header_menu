@@ -70,6 +70,7 @@
 
     .header-tools {
       width: 100%;
+
       @include breakpoint-md {
         display: flex;
         width: initial;
@@ -121,6 +122,7 @@
       transform: scale(1, 0);
       transform-origin: top;
       transition: transform 400ms ease-in-out;
+
       @include breakpoint-md {
         transform: initial;
       }
@@ -128,6 +130,7 @@
       &--link {
         padding: 10px 0px;
       }
+
       @include breakpoint-md {
         flex-wrap: nowrap;
         flex-direction: row;

@@ -24,16 +24,18 @@ a {
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
-  a{
+
+  a {
     color: $black;
+
     @include breakpoint-lg {
       font-size: 14px;
     }
   }
 
-  &:hover, 
+  &:hover,
   &.active {
-    a{
+    a {
 
       color: $pink;
     }
