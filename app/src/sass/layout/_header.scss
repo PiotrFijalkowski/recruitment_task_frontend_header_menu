@@ -1,6 +1,7 @@
 .header {
   &__panel {
     width: 100%;
+    border-top: 1px solid $lightgrey;
     border-bottom: 1px solid $lightgrey;
     display: none;
     @include breakpoint-md {
@@ -10,16 +11,27 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 15px 0px;
 
-      &__contacts--item {
+
+      &__contacts--item  {
         display: inline-block;
         align-items: center;
         justify-content: center;
         margin-right: 15px;
+        padding: 12px 0px;
 
         .icon {
           margin-right: 5px;
+        }
+      } 
+      &__account--item {
+        display: inline-flex;
+    align-items: flex-end;
+    align-content: flex-end;
+        border-left: 1px solid $lightgrey;
+        padding: 12px 20px 12px 20px;
+        .icon {
+          margin-right: 10px;
         }
       } 
     }
