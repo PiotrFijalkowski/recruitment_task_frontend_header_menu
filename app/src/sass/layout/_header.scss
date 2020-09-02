@@ -4,16 +4,18 @@
     border-top: 1px solid $lightgrey;
     border-bottom: 1px solid $lightgrey;
     display: none;
+
     @include breakpoint-md {
-      display: block; 
+      display: block;
     }
+
     .header-box {
       display: flex;
       justify-content: space-between;
       align-items: center;
 
 
-      &__contacts--item  {
+      &__contacts--item {
         display: inline-block;
         align-items: center;
         justify-content: center;
@@ -23,17 +25,87 @@
         .icon {
           margin-right: 5px;
         }
-      } 
+      }
+
       &__account--item {
         display: inline-flex;
-    align-items: flex-end;
-    align-content: flex-end;
+        align-items: flex-end;
+        align-content: flex-end;
         border-left: 1px solid $lightgrey;
         padding: 12px 20px 12px 20px;
+
         .icon {
           margin-right: 10px;
         }
-      } 
+      }
+    }
+  }
+
+  &__inner {
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint-md {
+      flex-direction: row;
+      padding: 15px 0px;
+    }
+
+    @include breakpoint-lg {
+      padding: 30px 0px;
+    }
+
+    &--logo {
+      img {
+        width: auto;
+        max-height: 40px;
+
+        @include breakpoint-lg {
+          max-height: inherit;
+        }
+      }
+    }
+
+    .header-tools {
+      width: 100%;
+      @include breakpoint-md {
+        display: flex;
+        width: initial;
+      }
+
+      .field {
+        position: relative;
+        margin: 10px 15px 0px 15px;
+
+        &--input {
+          width: 100%;
+          border: none;
+          border-bottom: 1px solid $black;
+          padding: 0px 0px 10px 5px;
+          color: $gray;
+
+          @include breakpoint-md {
+            width: 240px;
+          }
+
+          @include breakpoint-lg {
+            width: 480px;
+          }
+
+          &::placeholder {
+            color: $gray;
+          }
+
+          &:focus {
+            border: none;
+            border-bottom: 1px solid $black;
+            outline: none;
+
+          }
+        }
+      }
     }
   }
 }
